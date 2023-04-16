@@ -6,22 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador de texto</title>
 
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!--links css-->
     <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header>
         <img src="src/images/logo.svg" alt="logo alura">
     </header>
     <main>
-        <form action="">
+        <section class="formulario">
+        <form >
             <label for="entrada">Digite seu texto</label>
-            <textarea name="entrada" id="entrada" cols="30" rows="10"></textarea>
-            <button>Codificar</button>
+            <textarea name="entrada" class="entrada" cols="30" rows="10"></textarea>
+            <div class="submit">
+            <button>criptografar</button>
             <button>Descriptografar</button>
+            </div>
         </form>
+    </section>
         <section class="saida">
-            <p class="resultado"></p>
+            <img src="src/images/High quality products 1 1.svg" alt="">
+            <p>nenhuma mensagem encontrada</p>
+            <p>digite um texto que voce deseja criptografar ou descriptografar</p>
             <button>Copiar</button>
         </section>
     </main>

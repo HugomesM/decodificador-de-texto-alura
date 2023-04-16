@@ -1,0 +1,59 @@
+body {
+    background-color: #e5e5e5;
+    font-family: 'Inter', sans-serif
+}
+
+header img {
+    margin: 2rem;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 35rem;
+    
+}
+
+.formulario {
+    margin-left: 1rem;
+}
+
+.entrada {
+    border: none;
+    background-color: #e5e5e5;
+}
+
+label{
+    font-size: 2rem;
+    color: #0a3871;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+button {
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.saida {
+    border: 1px solid black;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: white;
+    margin-right: 1rem;
+    width: 20rem;
+    position: absolute;
+    right: 1rem;
+}
+
+footer {
+    text-align: center;
+    margin: 2rem;
+}

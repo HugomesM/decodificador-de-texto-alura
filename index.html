@@ -13,30 +13,32 @@
     <!--links css-->
     <link rel="stylesheet" href="src/css/global.css">
     <link rel="stylesheet" href="src/css/style.css">
+
+    <script src="src/javascript/main.js" defer></script>
 </head>
 <body>
+    <div class="container">
     <header>
         <img src="src/images/logo.svg" alt="logo alura">
     </header>
-    <main>
-        <section class="formulario">
-        <form >
-            <label for="entrada">Digite seu texto</label>
-            <textarea name="entrada" class="entrada" cols="30" rows="10"></textarea>
+        <section class="entrada">
+        <form  class="formulario">
+            <label for="text" class="titulo">Digite seu texto</label>
+            <textarea name="text" class="text-area" id="text-entrada" cols="10" rows="30" placeholder="apenas letras minusculas e sem acento"></textarea>
             <div class="submit">
-            <button>criptografar</button>
-            <button>Descriptografar</button>
+            <button class="crip" id="crip">criptografar</button>
+            <button class="descrip" id="descrip">Descriptografar</button>
             </div>
         </form>
     </section>
-        <section class="saida">
+        <section class="saida" id="saida">
             <img src="src/images/High quality products 1 1.svg" alt="">
-            <p>nenhuma mensagem encontrada</p>
-            <p>digite um texto que voce deseja criptografar ou descriptografar</p>
-            <button>Copiar</button>
+            <p class="titulo">nenhuma mensagem encontrada</p>
+            <p class="text">digite um texto que voce deseja criptografar ou descriptografar</p>
+            <button class="copy" id="copy">Copiar</button>
         </section>
-    </main>
     <footer><p>&copy;Hugo Mendes Web Developer</p></footer>
-    <script src="src/javascript/main.js"></script>
+    </div>
+    
 </body>
 </html>

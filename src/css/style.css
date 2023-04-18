@@ -1,59 +1,69 @@
 body {
     background-color: #e5e5e5;
-    font-family: 'Inter', sans-serif
+    font-family: 'inter', sans-serif;
+    
 }
 
-header img {
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header saida"
+    "entrada entrada entrada saida"
+    "footer footer footer footer";
+}
+header {
+    grid-area: header;
     margin: 2rem;
-    
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-    height: 35rem;
-    
-}
-
-.formulario {
-    margin-left: 1rem;
+.titulo {
+    font-weight:  700;
 }
 
 .entrada {
-    border: none;
-    background-color: #e5e5e5;
+    grid-area: entrada;
+
 }
 
-label{
-    font-size: 2rem;
-    color: #0a3871;
-}
-
-form {
+.formulario {
+    text-align: center;
     display: flex;
     flex-direction: column;
-    
+    margin: 2rem 3rem;
 }
 
-button {
-    border-radius: .5rem;
-    padding: 1rem;
+.text-area {
+    background-color: #e5e5e5;
+    border: none;
+    padding-left: 1rem;
+    margin-top: 1rem;
 }
 
 .saida {
+    grid-area: saida;
     border: 1px solid black;
-    border-radius: 1rem;
-    text-align: center;
+    border-radius: 2rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: white;
-    margin-right: 1rem;
     width: 20rem;
-    position: absolute;
-    right: 1rem;
+    text-align: center;
+}
+
+button {
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    background-color: rgb(47, 38, 170);
+    color: white;
 }
 
 footer {
+    grid-area: footer;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 2rem;
 }
